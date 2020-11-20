@@ -10,5 +10,26 @@ Scott, Michael Lee. *Programming language pragmatics 4th edition*. Morgan Kaufma
 
 # Researchers of Programming Languages
 
+Just some names whose articles were read by me. Inside ( ) just some related thing to let me know who they are. 
+
 [Daniel P. Friedman](https://legacy.cs.indiana.edu/~dfried/)
 
+[Robert Harper](http://www.cs.cmu.edu/~rwh/) (One of the authors of the Standard ML)
+
+[Benjamin C.  Pierce](https://www.cis.upenn.edu/~bcpierce/) (Student of Robert Harper)
+
+# Editing note
+
+Emacs was, is and will still be the *de facto* editor for various functional programming lanugages.
+
+| Lang   | Major modes |
+| ------ | ----------- |
+| Lisp   | SLIME       |
+| scheme | Geiser      |
+| Ocaml  | tuareg      |
+
+Fortunately, they share a few keybindings
+
+`C-c C-r` => eval region
+
+`C-x C-e` => eval the last expression

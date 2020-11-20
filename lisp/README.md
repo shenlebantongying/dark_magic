@@ -2,21 +2,25 @@
 
 Sorted in the order of my interest
 
-+ **Norvig** Paradigms of Artificial Intelligence Programming <https://github.com/norvig/paip-lisp>
-
++ **Norvig**: Paradigms of Artificial Intelligence Programming <https://github.com/norvig/paip-lisp>
 + Common Lisp Recipes: A Problem-Solution Approach
-
++ Let Over Lambda ( A hard-core book)
 + Practical Common Lisp
-
 + the little lisper
 
 
 ## Reference:
 
+http://clqr.boundp.org/index.html
+
 <https://common-lisp.net/>
+
 CLiki <https://www.cliki.net/>
+
 ANSI common lisp <http://www.paulgraham.com/acl.html>
+
 <https://lispcookbook.github.io/cl-cookbook/>
+
 The Common Lisp HyperSpec <http://www.lispworks.com/documentation/HyperSpec/Front/index.htm>
 
 # Technical Notes
