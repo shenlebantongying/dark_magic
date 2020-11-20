@@ -1,0 +1,73 @@
+ \documentclass[a4paper]{article}
+ 
+% PDF/A
+\usepackage{hyperref}
+\usepackage[a-1b]{pdfx}
+
+%styling
+\setlength\parindent{0pt}
+
+% metadata
+\title{Notions to Study Modern Computer Science}
+\author{slbtty}
+\date{November 10,2020}
+
+\begin{document}
+\maketitle
+\section{basic symbols}
+
+\subsection{A lambda to bind them all ($\lambda x.e$)}
+$\lambda x.e$ meaning "the function that maps parameter x to expression e"\\
+
+Today, we use $x \mapsto e$ as
+
+\begin{itemize}
+	\item $x \mapsto e\ or\ \lambda x.x^2 \Rightarrow$  the function $x^2$
+	\item $(x,y)\mapsto x^2+y^2\ or\ \lambda x.\lambda y.x^2+y^2 \Rightarrow $ the function $x^2+y^2$
+	\item $c\mapsto (x\mapsto cx^2)\ or\ \lambda c.\lambda x.cx^2\Rightarrow$ the family of functions $cx^2$
+\end{itemize}
+
+
+\subsubsection{Sets = predicates}
+Membership:
+\[
+x\in A \equiv A\ x\ (application)
+\]
+
+As title said "sets = predicates", this one can be understood as "If A x is true, then x belongs to A". A x just a convection of lambda calculus' "apply".
+
+Singleton:
+\[
+{x}\equiv \lambda y.x = y
+\]
+Binary union:
+\[
+A \cup B \equiv \lambda x. A\ x \vee B\ x
+\]
+General union (Arbitrary unions)
+\[
+\bigcup\!_{x\in A}B(x) \equiv \lambda y.\exists x, A\ x \wedge B\ x\ y
+\]
+B is a set for every x belongs to A. It is also called as \textit{infinitary union} since the B can be infinity large\\
+
+If B is a set whose elements are sets, then x is an element of the union of B if and only if there is at least one element of A of B such that x is an element of A.
+
+\section{Propositional calculus}
+\subsection{examples}
+\subsubsection{Modus Ponens}
+Description: if $p$ then $q$; $p$; therefore $q$.
+\[
+((p \rightarrow q) \wedge p) \vdash q
+\]
+
+Alternatively, it can be written as
+
+\[
+\frac{p,p\Rightarrow q}{q}
+\]
+
+$\vdash$ and $\Rightarrow$ means "proves" or "implies".
+
+\end{document}
+
+
