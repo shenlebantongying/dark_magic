@@ -33,3 +33,8 @@ Fortunately, they share a few keybindings
 `C-c C-r` => eval region
 
 `C-x C-e` => eval the last expression
+
+# Notations
+
+what_the_heck_are_those_symbols.tex <https://www.overleaf.com/read/gtpvwhzwfczm>
+
