@@ -1,7 +1,7 @@
 ;; Tested on Chez Scheme
 
 
-;; TODO call/cc
+;; TODO read <https://ds26gte.github.io/tyscheme/index-Z-H-15.html>
 
 ;; =================================
 ;; Syntactic Extension
@@ -59,4 +59,28 @@
 ;; compute (+ 3 4)
 ;; pass the result to m34 in [lambda (m34) (+ m12 m34)]
 ;; return the (+ m12 m34) => 14
+
+;;================================
+;; call/cc
+
+;; `continuation` of (+ 1 (+ 2 3)) is
+
+(lambda (f) (+ 1 f))
+
+;; (+1 (+ 2 3)) is equal to
+
+(+ 1 (call/cc
+      (lambda (cont) (cont (+ 2 3))))) ;; => 6
+
+
+(define list-product
+  (lambda (s)
+    (let recur ((s s))
+      (if (null? s) 1
+          (* (car s) (recur (cdr s)))))))
+
+(list-product '(2 3 4)) ;; => 24
+
+
+
 
