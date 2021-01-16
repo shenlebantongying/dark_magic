@@ -165,7 +165,7 @@ It should only modify the values of Spacemacs settings."
    ;; with `:variables' keyword (similar to layers). Check the editing styles
    ;; section of the documentation for details on available variables.
    ;; (default 'vim)
-   dotspacemacs-editing-style 'emacs
+   dotspacemacs-editing-style 'hybrid
 
    ;; If non-nil show the version string in the Spacemacs buffer. It will
    ;; appear as (spacemacs version)@(emacs version)
@@ -515,9 +515,9 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-	(menu-bar-mode)
-	(tool-bar-mode)
-	(setq default-tab-width 4)
+        (menu-bar-mode)
+        (tool-bar-mode)
+        (setq default-tab-width 4)
 
   )
 
