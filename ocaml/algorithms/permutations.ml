@@ -12,7 +12,7 @@ let rec insert_e element seen l=
     []->[ seen @ [element]]
   | h::t->( seen @ element::h::t )::insert_e element (seen @ [h]) t
 
-let rec insert_element_to_list element l=
+let insert_element_to_list element l=
   insert_e element [] l
 (* Step 3:
    Assuming X is the inserted element, o is 3 original list elements
@@ -20,7 +20,7 @@ let rec insert_element_to_list element l=
    x o o o
    o x o o
    o o x o
-   o o o x
+   o! o o x
    Note that we would keep track of the elements before x -> `seen`
    We always put the `seen` at beginning for next round,
    followed by our element to be inserted
@@ -44,10 +44,10 @@ let insert_to_all_lists element lists =
 let rec permutate l =
   match l with
     []-> [[]]
-  | h::t -> insert_to_all_positions h (permutate t);;
+  | h::t -> insert_to_all_lists h (permutate t);;
 (* Step1:
    Assuming we have know the permutates other than the head.
    We can then insert the head to all possitions on each permutates.
 *)
 
-permutate [1;2;3];
+permutate [1;2;3;4];
