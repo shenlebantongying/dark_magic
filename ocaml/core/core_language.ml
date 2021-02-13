@@ -1,3 +1,4 @@
+(* Use Std lib only *)
 (* define the map *)
 
 open List;;

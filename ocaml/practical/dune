@@ -1,0 +1,4 @@
+(executables
+ (names csv_manipulation)
+ (libraries core)
+)
