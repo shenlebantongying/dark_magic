@@ -45,8 +45,9 @@ let rec merge_sort l=
     []->[]
   | [x]-> [x]                   (* 1 or 0 elements no need to sort *)
   | __ ->
-    let left  = List.take l (List.length l / 2)  in
-    let right = List.drop l (List.length l / 2)  in
+    let half_length = List.length l / 2 in
+    let left  = List.take l half_length in
+    let right = List.drop l half_length  in
     merge(merge_sort left) (merge_sort right);; (* Dividing *)
 
 merge_sort [6; 4; 5; 7; 2; 5; 3; 4];;

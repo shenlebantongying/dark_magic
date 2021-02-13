@@ -34,4 +34,4 @@ To ease your life, using `core` and `batteries` are desired.
 
 However, Jane Street's `core` don't have detailed doc, and is very large like ANSI Common Lisp Spec.
 
-Maybe using `Batteries` is more of pleasure `:)`
+The source code of inria std is actually here and its quite elegent: https://github.com/ocaml/ocaml/tree/trunk/stdlib
