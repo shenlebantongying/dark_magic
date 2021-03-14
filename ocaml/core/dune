@@ -1,5 +1,0 @@
-(executables
- (names core_language battery_playground RWO_core)
- (libraries batteries core)
-)
-
